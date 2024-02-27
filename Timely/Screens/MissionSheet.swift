@@ -14,7 +14,7 @@
 
 import SwiftUI
 import MapKit
-//import LocationPicker
+import LocationPicker
 
 enum AppMode: String, CaseIterable {
     case online = "Online"
@@ -150,7 +150,7 @@ struct MissionSheet: View {
                                 }
                             }
                             .sheet(isPresented: $showSheet) {
-                               // LocationPicker(instructions: "Tap to select coordinates", coordinates: $coordinates, dismissOnSelection: true)
+                                LocationPicker(instructions: "Tap to select coordinates", coordinates: $coordinates, dismissOnSelection: true)
                             }
                             .padding(.vertical)
                         }

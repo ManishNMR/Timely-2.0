@@ -54,6 +54,10 @@
 		0F4E66792B8DA6FA00368129 /* AddMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E66782B8DA6FA00368129 /* AddMission.swift */; };
 		0F4E667B2B8DA71000368129 /* HealthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E667A2B8DA71000368129 /* HealthCard.swift */; };
 		0F4E667D2B8DA75700368129 /* MissionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E667C2B8DA75700368129 /* MissionSheet.swift */; };
+		0F4E66802B8DA90C00368129 /* LocationVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E667F2B8DA90C00368129 /* LocationVerification.swift */; };
+		0F4E66832B8DA94000368129 /* LocationPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 0F4E66822B8DA94000368129 /* LocationPicker */; };
+		0F4E66852B8DB5B200368129 /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E66842B8DB5B200368129 /* Test2.swift */; };
+		0F4E66892B8DF9DB00368129 /* UserTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E66882B8DF9DB00368129 /* UserTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +81,9 @@
 		0F4E66782B8DA6FA00368129 /* AddMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMission.swift; sourceTree = "<group>"; };
 		0F4E667A2B8DA71000368129 /* HealthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCard.swift; sourceTree = "<group>"; };
 		0F4E667C2B8DA75700368129 /* MissionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSheet.swift; sourceTree = "<group>"; };
+		0F4E667F2B8DA90C00368129 /* LocationVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVerification.swift; sourceTree = "<group>"; };
+		0F4E66842B8DB5B200368129 /* Test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
+		0F4E66882B8DF9DB00368129 /* UserTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +97,7 @@
 				0F44B32E2B728028001FB04F /* FirebaseAnalyticsSwift in Frameworks */,
 				0F44B32A2B728028001FB04F /* FirebaseAnalytics in Frameworks */,
 				0F44B32C2B728028001FB04F /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				0F4E66832B8DA94000368129 /* LocationPicker in Frameworks */,
 				0F44B3522B728028001FB04F /* FirebaseMLModelDownloader in Frameworks */,
 				0F44B3462B728028001FB04F /* FirebaseFirestoreSwift in Frameworks */,
 				0F4E66752B8DA69300368129 /* SplineRuntime in Frameworks */,
@@ -137,9 +145,10 @@
 		0F44B2FC2B71F633001FB04F /* Timely */ = {
 			isa = PBXGroup;
 			children = (
+				0F4E668A2B8E38CE00368129 /* Core */,
+				0F4E667E2B8DA8F900368129 /* Test */,
 				0F4E66702B8DA5F300368129 /* Landing */,
 				0F44B3122B71F708001FB04F /* Model */,
-				0F44B3142B71F736001FB04F /* Auth */,
 				0F44B30C2B71F691001FB04F /* Components */,
 				0F44B30B2B71F654001FB04F /* Screens */,
 				0F44B2FD2B71F633001FB04F /* TimelyApp.swift */,
@@ -185,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				0F44B30E2B71F6C8001FB04F /* User.swift */,
+				0F4E66882B8DF9DB00368129 /* UserTable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,6 +224,23 @@
 				0F4E667A2B8DA71000368129 /* HealthCard.swift */,
 			);
 			path = Landing;
+			sourceTree = "<group>";
+		};
+		0F4E667E2B8DA8F900368129 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				0F4E667F2B8DA90C00368129 /* LocationVerification.swift */,
+				0F4E66842B8DB5B200368129 /* Test2.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		0F4E668A2B8E38CE00368129 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0F44B3142B71F736001FB04F /* Auth */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 				0F44B35B2B728028001FB04F /* FirebaseStorage */,
 				0F44B35D2B728028001FB04F /* FirebaseStorageCombine-Community */,
 				0F4E66742B8DA69300368129 /* SplineRuntime */,
+				0F4E66822B8DA94000368129 /* LocationPicker */,
 			);
 			productName = Timely;
 			productReference = 0F44B2FA2B71F633001FB04F /* Timely.app */;
@@ -293,6 +321,7 @@
 			packageReferences = (
 				0F44B3282B728028001FB04F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				0F4E66732B8DA69300368129 /* XCRemoteSwiftPackageReference "spline-ios" */,
+				0F4E66812B8DA94000368129 /* XCRemoteSwiftPackageReference "LocationPickerForSwiftUI" */,
 			);
 			productRefGroup = 0F44B2FB2B71F633001FB04F /* Products */;
 			projectDirPath = "";
@@ -326,12 +355,15 @@
 				0F4E66772B8DA6E000368129 /* UpcomingEventCard.swift in Sources */,
 				0F44B3192B71F94C001FB04F /* LoginView.swift in Sources */,
 				0F44B3232B726C25001FB04F /* ProfileView.swift in Sources */,
+				0F4E66892B8DF9DB00368129 /* UserTable.swift in Sources */,
 				0F4E667B2B8DA71000368129 /* HealthCard.swift in Sources */,
 				0F44B3102B71F6C8001FB04F /* User.swift in Sources */,
 				0F44B3002B71F633001FB04F /* ContentView.swift in Sources */,
 				0F4E667D2B8DA75700368129 /* MissionSheet.swift in Sources */,
 				0F44B2FE2B71F633001FB04F /* TimelyApp.swift in Sources */,
+				0F4E66802B8DA90C00368129 /* LocationVerification.swift in Sources */,
 				0F44B31F2B71FBE5001FB04F /* SignUp.swift in Sources */,
+				0F4E66852B8DB5B200368129 /* Test2.swift in Sources */,
 				0F44B3212B71FC34001FB04F /* InputView.swift in Sources */,
 				0F4E66792B8DA6FA00368129 /* AddMission.swift in Sources */,
 				0F44B30F2B71F6C8001FB04F /* AuthViewModel.swift in Sources */,
@@ -560,6 +592,14 @@
 				kind = branch;
 			};
 		};
+		0F4E66812B8DA94000368129 /* XCRemoteSwiftPackageReference "LocationPickerForSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alessiorubicini/LocationPickerForSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -702,6 +742,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0F4E66732B8DA69300368129 /* XCRemoteSwiftPackageReference "spline-ios" */;
 			productName = SplineRuntime;
+		};
+		0F4E66822B8DA94000368129 /* LocationPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F4E66812B8DA94000368129 /* XCRemoteSwiftPackageReference "LocationPickerForSwiftUI" */;
+			productName = LocationPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

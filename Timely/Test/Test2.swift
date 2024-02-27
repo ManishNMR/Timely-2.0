@@ -6,13 +6,47 @@
 //
 
 import SwiftUI
+import CoreLocation
+import CoreLocationUI
 
-struct Test2: View {
+class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+    let manager = CLLocationManager()
+
+    @Published var location: CLLocationCoordinate2D?
+
+    override init() {
+        super.init()
+        manager.delegate = self
+    }
+
+    func requestLocation() {
+        manager.requestLocation()
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        location = locations.first?.coordinate
+    }
+}
+
+
+struct TestView: View {
+    @StateObject var locationManager = LocationManager()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            if let location = locationManager.location {
+                Text("Your location: \(location.latitude), \(location.longitude)")
+            }
+
+            LocationButton {
+                locationManager.requestLocation()
+            }
+            .frame(height: 44)
+            .padding()
+        }
     }
 }
 
 #Preview {
-    Test2()
+    TestView()
 }

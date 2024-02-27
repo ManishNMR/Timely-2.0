@@ -50,42 +50,6 @@ class AuthViewModel: ObservableObject{
         }
     }
     
-    func createTask(venue: String, dateTime: Date, category: String ) async {
-           guard let userId = Auth.auth().currentUser?.uid else { return }
-
-           do {
-               let task = UserTask(id:userId , venue: venue,dateTime: dateTime, category: category, isCompleted: false)
-               
-               // Encode and store the task in Firestore under the "tasks" collection
-               let encodedTask = try Firestore.Encoder().encode(task)
-               let documentRef = try await Firestore.firestore().collection("tasks").document(userId).setData(encodedTask)
-               
-               // Get the auto-generated task ID and associate it with the user
-               let taskId = documentRef.documentID
-               try await Firestore.firestore().collection("tasks").document(userId).updateData(["tasks": FieldValue.arrayUnion([taskId])])
-               
-               // Fetch the user to update the currentUser
-               await fetchUser()
-           } catch {
-               print("Failed to create task: \(error.localizedDescription)")
-           }
-       }
-//
-//       func fetchTasks() async {
-//           guard let userId = Auth.auth().currentUser?.uid else { return }
-//
-//           do {
-//               // Fetch the user to get the task IDs associated with the user
-//               let userSnapshot = try await Firestore.firestore().collection("users").document(userId).getDocument()
-//               if let taskIds = userSnapshot.data()?["tasks"] as? [String] {
-//                   // Fetch each task using its ID
-//                   let tasks = try await Task.fetchTasks(taskIds: taskIds)
-//                   print("Fetched tasks: \(tasks)")
-//               }
-//           } catch {
-//               print("Failed to fetch tasks: \(error.localizedDescription)")
-//           }
-//       }
    
     
     func signOut(){
