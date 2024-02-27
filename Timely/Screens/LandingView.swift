@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Landing: View {
+struct LandingView: View {
     var body: some View {
         NavigationStack{
             VStack{
@@ -24,7 +24,7 @@ struct Landing: View {
                         .bold()
                     HealthCard(currentHealth: 541, maxHealth: 1000, level: 13)
                         .padding(.bottom, 5)
-                    AddMission()
+                   AddMission()
                     Spacer()
                 }
                 .offset(y: -20)
@@ -37,5 +37,5 @@ struct Landing: View {
 }
 
 #Preview {
-    Landing()
+    LandingView()
 }

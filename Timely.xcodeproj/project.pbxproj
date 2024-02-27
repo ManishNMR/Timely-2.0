@@ -47,6 +47,13 @@
 		0F44B35A2B728028001FB04F /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0F44B3592B728028001FB04F /* FirebaseRemoteConfigSwift */; };
 		0F44B35C2B728028001FB04F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0F44B35B2B728028001FB04F /* FirebaseStorage */; };
 		0F44B35E2B728028001FB04F /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 0F44B35D2B728028001FB04F /* FirebaseStorageCombine-Community */; };
+		0F4E666F2B8DA5B200368129 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E666E2B8DA5B200368129 /* LandingView.swift */; };
+		0F4E66722B8DA61500368129 /* SplineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E66712B8DA61500368129 /* SplineCard.swift */; };
+		0F4E66752B8DA69300368129 /* SplineRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 0F4E66742B8DA69300368129 /* SplineRuntime */; };
+		0F4E66772B8DA6E000368129 /* UpcomingEventCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E66762B8DA6E000368129 /* UpcomingEventCard.swift */; };
+		0F4E66792B8DA6FA00368129 /* AddMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E66782B8DA6FA00368129 /* AddMission.swift */; };
+		0F4E667B2B8DA71000368129 /* HealthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E667A2B8DA71000368129 /* HealthCard.swift */; };
+		0F4E667D2B8DA75700368129 /* MissionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E667C2B8DA75700368129 /* MissionSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +71,12 @@
 		0F44B3202B71FC34001FB04F /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		0F44B3222B726C25001FB04F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0F44B3262B727B34001FB04F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F4E666E2B8DA5B200368129 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		0F4E66712B8DA61500368129 /* SplineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplineCard.swift; sourceTree = "<group>"; };
+		0F4E66762B8DA6E000368129 /* UpcomingEventCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventCard.swift; sourceTree = "<group>"; };
+		0F4E66782B8DA6FA00368129 /* AddMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMission.swift; sourceTree = "<group>"; };
+		0F4E667A2B8DA71000368129 /* HealthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCard.swift; sourceTree = "<group>"; };
+		0F4E667C2B8DA75700368129 /* MissionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +92,7 @@
 				0F44B32C2B728028001FB04F /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				0F44B3522B728028001FB04F /* FirebaseMLModelDownloader in Frameworks */,
 				0F44B3462B728028001FB04F /* FirebaseFirestoreSwift in Frameworks */,
+				0F4E66752B8DA69300368129 /* SplineRuntime in Frameworks */,
 				0F44B3322B728028001FB04F /* FirebaseAppCheck in Frameworks */,
 				0F44B3302B728028001FB04F /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				0F44B3362B728028001FB04F /* FirebaseAuth in Frameworks */,
@@ -123,6 +137,7 @@
 		0F44B2FC2B71F633001FB04F /* Timely */ = {
 			isa = PBXGroup;
 			children = (
+				0F4E66702B8DA5F300368129 /* Landing */,
 				0F44B3122B71F708001FB04F /* Model */,
 				0F44B3142B71F736001FB04F /* Auth */,
 				0F44B30C2B71F691001FB04F /* Components */,
@@ -151,6 +166,8 @@
 				0F44B3182B71F94C001FB04F /* LoginView.swift */,
 				0F44B3222B726C25001FB04F /* ProfileView.swift */,
 				0F44B31E2B71FBE5001FB04F /* SignUp.swift */,
+				0F4E666E2B8DA5B200368129 /* LandingView.swift */,
+				0F4E667C2B8DA75700368129 /* MissionSheet.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -186,6 +203,17 @@
 				0F44B3132B71F717001FB04F /* ViewModels */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		0F4E66702B8DA5F300368129 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				0F4E66712B8DA61500368129 /* SplineCard.swift */,
+				0F4E66762B8DA6E000368129 /* UpcomingEventCard.swift */,
+				0F4E66782B8DA6FA00368129 /* AddMission.swift */,
+				0F4E667A2B8DA71000368129 /* HealthCard.swift */,
+			);
+			path = Landing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +260,7 @@
 				0F44B3592B728028001FB04F /* FirebaseRemoteConfigSwift */,
 				0F44B35B2B728028001FB04F /* FirebaseStorage */,
 				0F44B35D2B728028001FB04F /* FirebaseStorageCombine-Community */,
+				0F4E66742B8DA69300368129 /* SplineRuntime */,
 			);
 			productName = Timely;
 			productReference = 0F44B2FA2B71F633001FB04F /* Timely.app */;
@@ -263,6 +292,7 @@
 			mainGroup = 0F44B2F12B71F633001FB04F;
 			packageReferences = (
 				0F44B3282B728028001FB04F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0F4E66732B8DA69300368129 /* XCRemoteSwiftPackageReference "spline-ios" */,
 			);
 			productRefGroup = 0F44B2FB2B71F633001FB04F /* Products */;
 			projectDirPath = "";
@@ -291,15 +321,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4E66722B8DA61500368129 /* SplineCard.swift in Sources */,
 				0F44B31D2B71FBB9001FB04F /* TimelyText.swift in Sources */,
+				0F4E66772B8DA6E000368129 /* UpcomingEventCard.swift in Sources */,
 				0F44B3192B71F94C001FB04F /* LoginView.swift in Sources */,
 				0F44B3232B726C25001FB04F /* ProfileView.swift in Sources */,
+				0F4E667B2B8DA71000368129 /* HealthCard.swift in Sources */,
 				0F44B3102B71F6C8001FB04F /* User.swift in Sources */,
 				0F44B3002B71F633001FB04F /* ContentView.swift in Sources */,
+				0F4E667D2B8DA75700368129 /* MissionSheet.swift in Sources */,
 				0F44B2FE2B71F633001FB04F /* TimelyApp.swift in Sources */,
 				0F44B31F2B71FBE5001FB04F /* SignUp.swift in Sources */,
 				0F44B3212B71FC34001FB04F /* InputView.swift in Sources */,
+				0F4E66792B8DA6FA00368129 /* AddMission.swift in Sources */,
 				0F44B30F2B71F6C8001FB04F /* AuthViewModel.swift in Sources */,
+				0F4E666F2B8DA5B200368129 /* LandingView.swift in Sources */,
 				0F44B3172B71F8BD001FB04F /* GetStartedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +552,14 @@
 				minimumVersion = 10.20.0;
 			};
 		};
+		0F4E66732B8DA69300368129 /* XCRemoteSwiftPackageReference "spline-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/splinetool/spline-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -653,6 +697,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0F44B3282B728028001FB04F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		0F4E66742B8DA69300368129 /* SplineRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F4E66732B8DA69300368129 /* XCRemoteSwiftPackageReference "spline-ios" */;
+			productName = SplineRuntime;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
