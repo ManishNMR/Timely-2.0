@@ -58,6 +58,7 @@
 		0F4E66832B8DA94000368129 /* LocationPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 0F4E66822B8DA94000368129 /* LocationPicker */; };
 		0F4E66852B8DB5B200368129 /* Test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E66842B8DB5B200368129 /* Test2.swift */; };
 		0F4E66892B8DF9DB00368129 /* UserTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E66882B8DF9DB00368129 /* UserTable.swift */; };
+		0F7159DB2B8E5781000D7173 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7159DA2B8E5781000D7173 /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		0F4E667F2B8DA90C00368129 /* LocationVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVerification.swift; sourceTree = "<group>"; };
 		0F4E66842B8DB5B200368129 /* Test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2.swift; sourceTree = "<group>"; };
 		0F4E66882B8DF9DB00368129 /* UserTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTable.swift; sourceTree = "<group>"; };
+		0F7159DA2B8E5781000D7173 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		0F44B2FC2B71F633001FB04F /* Timely */ = {
 			isa = PBXGroup;
 			children = (
+				0F7159D92B8E5771000D7173 /* Managers */,
 				0F4E668A2B8E38CE00368129 /* Core */,
 				0F4E667E2B8DA8F900368129 /* Test */,
 				0F4E66702B8DA5F300368129 /* Landing */,
@@ -241,6 +244,14 @@
 				0F44B3142B71F736001FB04F /* Auth */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		0F7159D92B8E5771000D7173 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0F7159DA2B8E5781000D7173 /* UserManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +379,7 @@
 				0F4E66792B8DA6FA00368129 /* AddMission.swift in Sources */,
 				0F44B30F2B71F6C8001FB04F /* AuthViewModel.swift in Sources */,
 				0F4E666F2B8DA5B200368129 /* LandingView.swift in Sources */,
+				0F7159DB2B8E5781000D7173 /* UserManager.swift in Sources */,
 				0F44B3172B71F8BD001FB04F /* GetStartedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

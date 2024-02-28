@@ -13,8 +13,7 @@ struct ProfileView: View {
     @State private var isHistorySheetPresented = false
     
     @EnvironmentObject var viewModel: AuthViewModel
-    
-    
+
     var body: some View {
        
         if let user = viewModel.currentUser {
